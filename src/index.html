@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Side menu</title>
+    <link rel="stylesheet" href="../public/styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body class="bg-purple-800">
+    <!--
+        Build a card with two buttons. Each button opens a linked side menu with content and close button.
+        Clicking the close button or outside the side menu, should close it.
+    -->
+
+    <side
+      class="fixed top-0 left-[-450px] w-[450px] h-screen z-50 bg-gray-700 p-5 flex flex-col space-y-5 text-white duration-300"
+      id="sidebar"
+    >
+      <h1 id="text" class="text-gray-100"></h1>
+      <button class="bg-gray-400 p-2 rounded-md mr-5 text-white" id="close">
+        Close
+      </button>
+      
+    </side>
+    <div class="grid place-content-center h-screen">
+      <main class="text-2xl p-16 rounded bg-gray-100 ml-auto mr-auto">
+        <button class="bg-gray-400 p-2 rounded-md mr-5 text-white" id="search">
+          Search
+        </button>
+        <button class="bg-gray-400 p-2 rounded-md ml-5 text-white" id="run">
+          Run
+        </button>
+      </main>
+    </div>
+  </body>
+</html>
